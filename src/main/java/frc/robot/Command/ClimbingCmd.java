@@ -2,11 +2,10 @@ package frc.robot.Command;
 
 import edu.wpi.first.wpilibj2.command.Command;
 
+public class ClimbingCmd extends Command {
+    /** Creates a new ClimbingCmd. */
 
-public class ArmCmd extends Command{
-    /** Creates a new ArmCmd. */
-
-  public ArmCmd() {
+  public ClimbingCmd() {
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
@@ -18,7 +17,6 @@ public class ArmCmd extends Command{
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-
   }
 
   // Called once the command ends or is interrupted.
