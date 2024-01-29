@@ -1,11 +1,14 @@
 package frc.robot.Command;
 
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.Subsystem.ClimbingSubsystem;
 
 public class ClimbingCmd extends Command {
     /** Creates a new ClimbingCmd. */
-
-  public ClimbingCmd() {
+    private final ClimbingSubsystem Climbing;
+  public ClimbingCmd(ClimbingSubsystem Climbing) {
+    this.Climbing = Climbing;
+    addRequirements(this.Climbing);
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
