@@ -16,6 +16,9 @@ public class IntakeSubsystem extends SubsystemBase {
         intakeMotor.setVoltage(3);
     }
 
+    public void stop(){
+        intakeMotor.setVoltage(0);
+    }
     @Override
   public void periodic() {
   } 

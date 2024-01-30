@@ -17,6 +17,11 @@ public class ShooterSubsystem extends SubsystemBase {
         ShooterMotor1.setVoltage(3);
         ShooterMotor2.setVoltage(3);
     }
+
+    public void stop(){
+       ShooterMotor1.setVoltage(0);
+       ShooterMotor2.setVoltage(0);
+    }
     
     @Override
     public void periodic() {
